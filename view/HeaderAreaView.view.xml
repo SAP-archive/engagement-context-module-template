@@ -1,0 +1,8 @@
+<mvc:View controllerName="com.sap.engagementcontext.moduletemplate.controller.HeaderAreaView" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout">
+	<layout:Grid defaultSpan="L12 M12 S12" width="100%" hSpacing="0" vSpacing="0" class="sapUiSmallMarginTop">
+		<layout:content>
+			<Text id="headerViewText" text="{i18n>HEADERAREA_VIEW_TEXT}"/>
+		</layout:content>
+	</layout:Grid>
+</mvc:View>
