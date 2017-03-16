@@ -1,30 +1,31 @@
 # Module Template for SAP Hybris Service Engagement Context
 
-This module template project can be used as a basis to develop the necessary UI Views and objects of your custom documents/objects in the engagement context (of SAP Hybris Service Engagement Center) application.  
+This module template project can be used as the basis for developing the necessary UI Views and objects for your custom documents/objects in the engagement context (of SAP Hybris Service Engagement Center) application.  
 
-The engagement context application uses the SAPUI5 version 1.36.x.
+The engagement context application uses SAPUI5 version 1.36.x.
 
 
 
 ## Project Setup
 
-This module template project contains the following necessary objects and is in state to run with few changes:  
+This module template project contains the following objects and is in state to run with few changes:  
 
-* Header Area View: A sample implementation of header area view
-* Action Area View: A sample implementation of action area view with 2 links, each invoking a work area view
-* Work Area Views (2 views): Two sample implementation of work area views, one view is modelled as a crud view and another view modeled after a search view.
-* BCD Helper: A sample implementation of Business Context Data Helper class
-* i18n file: Property file containing number of text elements used in the project
+* __Header Area View__: A sample implementation of the header area view
+* __Action Area View__: A sample implementation of the action area view with two links, each invoking a work area view
+* __Work Area Views (2 views)__: Two sample implementations of work area views. One view is modeled as a CRUD view and the other view is modeled as a search view.
+* __BCD Helper__: A sample implementation of the Business Context Data Helper class
+* __i18n file__: A property file containing a number of the text elements used in the project
 
-Please follow below steps to embed the module template project in engagement context application.
+Follow the steps below to embed the module template project in the engagement context application.
 
 
 
 ### 1. Setup Business Context Configurations
 
-The following steps to updating Business Context configurations are needed to embed the module template project:
+The following steps show you how to update the Business Context configurations needed to embed the module template project:
 
-* Launch builder UI of your tenant (https://builder.yaas.io/). Navigate to Modules configuration (Path: Your Tenant -> Engagement Center Settings -> Modules) and maintain the following settings and save.
+* Launch the builder UI of your tenant (https://builder.yaas.io/).
+* __Modules Configuration__ Navigate to _< Your Tenant >_ -> _Engagement Center Settings_ -> _Modules_, click __ADD ROW__ to maintain the following settings, click __OK__ to apply them, and then click __SAVE__.
 
 		Module: Module_Template_App
 		Module Name: Engagement Context Extension Module Template
@@ -32,9 +33,9 @@ The following steps to updating Business Context configurations are needed to em
 		Module Base URL: https://localhost:8443/<URL-Path>
 		Module Path: com.sap.engagementcontext.moduletemplate
 		i18n URL: i18n/i18n.properties
->	Please change the URL (domain and port) as per your webserver configuration (see next step).
+>	Please change the URL (domain and port) according to your webserver configuration (see next step).
 
-* Navigate to Header Area Views configuration (Path: Your Tenant -> Engagement Center Settings -> Business Context -> Header Area Views) and maintain the following settings and save.
+* __Header Area Views configuration__ _< Your Tenant >_ -> _Engagement Center Settings_ -> _Business Context_ -> _Header Area Views_ to maintain the following settings, click __OK__ to apply them, and then click __SAVE__.
 
 		View ID: HeaderAreaView_Template
 		Order: 3
@@ -43,7 +44,7 @@ The following steps to updating Business Context configurations are needed to em
 		Description: Module Template - Header Area View
 		Active: True
 
-* Navigate to Action Area Views configuration (Path: Your Tenant -> Engagement Center Settings -> Business Context -> Action Area Views) and maintain the following settings and save.
+* __Action Area Views configuration__ Navigate to _< Your Tenant >_ -> _Engagement Center Settings_ -> _Business Context_ -> _Action Area Views_ to maintain the following settings, click __OK__ to apply them, and then click __SAVE__.
 
 		View ID: ActionAreaView_Template
 		Order of Views: << Please specify the next free number in your tenant >>
@@ -51,8 +52,8 @@ The following steps to updating Business Context configurations are needed to em
 		View Path: com.sap.engagementcontext.moduletemplate.view.ActionAreaMenu
 		Description: Module Template - Action Area View
 		Active: True
-	
-* Navigate to Work Area Views configuration (Path: Your Tenant -> Engagement Center Settings -> Business Context -> Work Area Views) and maintain the following settings for 2 views (below 2 tables) and save
+
+* __Work Area Views configuration__ Navigate to _< Your Tenant >_ -> _Engagement Center Settings_ -> _Business Context_ -> _Work Area Views_ to maintain the following settings, click __OK__ to apply them, and then click __SAVE__.
 
 		View Name: WorkAreaView_Template_1
 		View Path: com.sap.engagementcontext.moduletemplate.view.WorkAreaView1
@@ -69,8 +70,8 @@ The following steps to updating Business Context configurations are needed to em
 		Active: True
 		One Instance Only: True
 		Closable: True
-	
-* Navigate to Business Document Types configuration (Path: Your Tenant -> Engagement Center Settings -> Business Context -> Business Document Types) and maintain the following settings and save
+
+* __Business Document Types configuration__ Navigate to  _< Your Tenant >_ -> _Engagement Center Settings_ -> _Business Context_ -> _Business Document Types_ to maintain the following settings, click __OK__ to apply them, and then click __SAVE__.
 
 		Key of Business Document Type: Module_Template_BDT
 		Text ID (Singular): BUSDOCTYPE_MODULETEMPLATE
@@ -91,32 +92,32 @@ The following steps to updating Business Context configurations are needed to em
 
 
 
-### 2. Setup and run project on local environment
+### 2. Setup and Run the Project in your Local Environment
 
-The following steps show how to update the module template project based on the Business Context Configurations to run it on the local environment:
+The following steps show you how to update the module template project based on your Business Context configurations and run it in a local environment:
 
-* Clone and import the project to your eclipse workspace
+* Clone and import the project into your Eclipse workspace
 
-* Update Item handler class for Business Context with configured Business Document Type Key. 
-	* Open BCD Helper class(bcdhelper.js) under folder “helper”
-	* Search and replace `<< YOUR BUSINESS DOCUMENT TYPE KEY >>` with configured business document type key `Module_Template_ItemKey`.
+* Update the Item handler class for Business Context with the configured Business Document Type Key.
+	* Open the BCD Helper class (in the file _bcdhelper.js_) under the folder “helper”
+	* Search for and replace `<< YOUR BUSINESS DOCUMENT TYPE KEY >>` with the configured business document type key `Module_Template_ItemKey`.
 	* Save
 
-* Update Action Area menu view controller with Business Document Type and Work Area View ID
-	* Open Action Area menu view controller (ActionAreaMenu.controller.js) under folder “controller”
-	* Search and replace `<< YOUR BUSINESS DOCUMENT TYPE >>` with configured business document type key `Module_Template_BDT`.
-	* Search and replace `<< YOUR WORK AREA ID >>` with configured business document type key `WorkAreaView_Template_2`.
+* Update the Action Area menu view controller with the Business Document Type and Work Area View ID
+	* Open the Action Area menu view controller (in the file _ActionAreaMenu.controller.js_) under the folder “controller”
+	* Search for and replace `<< YOUR BUSINESS DOCUMENT TYPE >>` with the configured business document type key `Module_Template_BDT`.
+	* Search for and replace `<< YOUR WORK AREA ID >>` with the configured business document type key `WorkAreaView_Template_2`.
 	* Save
 
-* Update Work Area view controller with Business Document Type
-	* Open Work Area menu view controller (WorkAreaView2.controller.js) under folder “controller”
-	* Search and replace `<< YOUR BUSINESS DOCUMENT TYPE >>` with configured business document type key `Module_Template_BDT`
+* Update the Work Area view controller with the Business Document Type
+	* Open the Work Area menu view controller (in the file _WorkAreaView2.controller.js_) under the folder “controller”
+	* Search for and replace `<< YOUR BUSINESS DOCUMENT TYPE >>` with the configured business document type key `Module_Template_BDT`
 	* Save
 
-* Host your project in a local server of choice. The local server must be accessible through a HTTPS channel that enables cross-origin resource sharing.
-> One way how to host it is to create a Maven web application project, clone this module template project, place it in the maven project and host this in a tomcat server. You can find more instrunctions [here][1].
+* Host your project on a local server of your choice. The local server must be accessible through a HTTPS channel that enables cross-origin resource sharing.
+> One way to host it is to create a Maven web application project, clone this module template project, place it in the maven project and host this on a Tomcat server. You can find more instructions [here][1].
 
-* Launch Engagement Center from the same tenant where above configurations are maintained. 
+* Launch the engagement center from the tenant where you maintained the above configurations. 
 
 
 
