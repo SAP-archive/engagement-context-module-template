@@ -8,7 +8,7 @@ The engagement context application uses SAPUI5 version 1.36.x.
 
 ## Project Setup
 
-This module template project contains the following objects and is in state to run with few changes:  
+This module template project contains the following objects and can be run with only a small number of changes:  
 
 * __Header Area View__: A sample implementation of the header area view
 * __Action Area View__: A sample implementation of the action area view with two links, each invoking a work area view
@@ -117,9 +117,11 @@ The following steps show you how to update the module template project based on 
 * Host your project on a local server of your choice. The local server must be accessible through a HTTPS channel that enables cross-origin resource sharing.
 > One way to host it is to create a Maven web application project, clone this module template project, place it in the maven project and host this on a Tomcat server. You can find more instructions [here][1].
 
-* Launch the engagement center from the tenant where you maintained the above configurations. 
+* Launch the engagement center from the tenant where you maintained the above configurations.
 
+## Further Information
 
+You can find more information on configuring the engagement context in the Administrator's Guide for SAP Hybris Service Engagement Center on the [SAP Help Portal](https://uacp2.hana.ondemand.com/viewer/p/SAP_HYBRIS_SERVICE_ENGAGEMENT_CENTER).
 
 ## License
 
@@ -128,3 +130,4 @@ See the License file for complete license information.
 
 
 [1]: https://help.sap.com/saphelp_nw74/helpdata/en/d5/6826f550d74e02b8d4b32cb264de52/content.htm?original_fqdn=help.sap.de
+[2]:
