@@ -130,4 +130,3 @@ See the License file for complete license information.
 
 
 [1]: https://help.sap.com/saphelp_nw74/helpdata/en/d5/6826f550d74e02b8d4b32cb264de52/content.htm?original_fqdn=help.sap.de
-[2]:
