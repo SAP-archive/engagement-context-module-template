@@ -96,7 +96,7 @@ The following steps show you how to update the Business Context configurations n
 
 The following steps show you how to update the module template project based on your Business Context configurations and run it in a local environment:
 
-* Clone this repository to your local machine and import the project from this repository to your Eclipse.
+* Clone this repository to your local machine and import the project from the repository into Eclipse.
 
 * Update the Item handler class for Business Context with the configured Business Document Type Key.
 	* Open the BCD Helper class (in the file _bcdhelper.js_) under the folder “helper”
