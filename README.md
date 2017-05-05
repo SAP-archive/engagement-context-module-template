@@ -121,11 +121,11 @@ The following steps show you how to update the module template project based on 
 
 ## Further Information
 
-You can find more information on configuring the engagement context in the Administrator's Guide for SAP Hybris Service Engagement Center on the [SAP Help Portal](https://uacp2.hana.ondemand.com/viewer/p/SAP_HYBRIS_SERVICE_ENGAGEMENT_CENTER).
+You can find more information on configuring the engagement context in the Administrator's Guide for SAP Hybris Service Engagement Center on the [SAP Help Portal][2].
 
 ## How to contact us
 
-If you have questions or suggestions then please place them in [Hybris Experts](https://experts.hybris.com/index.html). It's important to use the topic ***Engagement Center*** and the space ***YaaS***, to make sure that your questions arrive with us.
+If you have questions or suggestions then please create an issue in this Github repository.
 
 ## License
 
@@ -134,3 +134,4 @@ See the License file for complete license information.
 
 
 [1]: https://help.sap.com/saphelp_nw74/helpdata/en/d5/6826f550d74e02b8d4b32cb264de52/content.htm?original_fqdn=help.sap.de
+[2]: https://uacp2.hana.ondemand.com/viewer/p/SAP_HYBRIS_SERVICE_ENGAGEMENT_CENTER
