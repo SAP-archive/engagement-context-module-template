@@ -96,7 +96,7 @@ The following steps show you how to update the Business Context configurations n
 
 The following steps show you how to update the module template project based on your Business Context configurations and run it in a local environment:
 
-* Clone and import the project into your Eclipse workspace
+* Clone this repository to your local machine and import the project from this repository to your Eclipse.
 
 * Update the Item handler class for Business Context with the configured Business Document Type Key.
 	* Open the BCD Helper class (in the file _bcdhelper.js_) under the folder “helper”
@@ -122,6 +122,10 @@ The following steps show you how to update the module template project based on 
 ## Further Information
 
 You can find more information on configuring the engagement context in the Administrator's Guide for SAP Hybris Service Engagement Center on the [SAP Help Portal](https://uacp2.hana.ondemand.com/viewer/p/SAP_HYBRIS_SERVICE_ENGAGEMENT_CENTER).
+
+## How to contact us
+
+If you have questions or suggestions then please place them in [Hybris Experts](https://experts.hybris.com/index.html). It's important to use the topic ***Engagement Center*** and the space ***YaaS***, to make sure that your questions arrive with us.
 
 ## License
 
