@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2009-2016 SAP SE or an SAP affiliate company. All rights reserved.
- */
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 		"com/sap/cecenter/engagementcenter/customcontrols/WorkareaViewController"
@@ -93,8 +90,8 @@ sap.ui.define([
 		},
 
 		/**
-		 * Mandatory function for the Engagement Context 
-		 * 
+		 * Mandatory function for the Engagement Context
+		 *
 		 * If you specify the opened View then the Engagement
 		 * Context need to know some ID of this view. E.g. if this
 		 * is a creation view of a document with the ID xy, then the
@@ -134,7 +131,7 @@ sap.ui.define([
 				.openBusinessDocument(oBusinessDocumentNavigator);
 		},
 
-		// Helper method: Generate random number 
+		// Helper method: Generate random number
 		getRandomDocumentId: function() {
 			return Math.floor(Math.random() * (1999 - 1001 + 1)) + 1001;
 		}

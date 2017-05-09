@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2009-2016 SAP SE or an SAP affiliate company. All rights reserved.
- */
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"com/sap/cecenter/engagementcenter/customcontrols/WorkareaViewController"
@@ -112,8 +109,8 @@ sap.ui.define([
 		},
 
 		/**
-		 * Mandatory function for the Engagement Context 
-		 * 
+		 * Mandatory function for the Engagement Context
+		 *
 		 * If you specify the opened View then the Engagement
 		 * Context need to know some ID of this view. E.g. if this
 		 * is a creation view of a document with the ID xy, then the
@@ -161,7 +158,7 @@ sap.ui.define([
 		 */
 		eventHandlerBcdBeforeClose: function() {
 			if (this.isSaveNeeded()) {
-				// call raiseCancelVeto to stop the close process for e.g., to get user attention 
+				// call raiseCancelVeto to stop the close process for e.g., to get user attention
 				// for validation errors, etc.
 				// this.getBCD().raiseCancelVeto();
 				this.SaveDocument();
@@ -193,7 +190,7 @@ sap.ui.define([
 
 		saveSuccess: function(data, textStatus, jqXHR) {
 			/*
-			 *  When creating new document: 
+			 *  When creating new document:
 			 * After successful save, ensure returned document id is updated within BCD
 			 * ! IMPORTANT !
 			 * Replace "<< YOUR BUSINESS DOCUMENT TYPE >>" with your business document type
@@ -226,12 +223,12 @@ sap.ui.define([
 		 * Overwrite this method to implement
 		 * your own logic whether your document
 		 * contains unsaved changes.
-		 * 
+		 *
 		 * <pre>
 		 *       true: there are unsaved changes, ask for confirmation
 		 *       false: no unsaved changes, view can be closed immediately
 		 * </pre>
-		 * 
+		 *
 		 * Overwrite this method and implement
 		 * your specific logic.
 		 */
@@ -241,7 +238,7 @@ sap.ui.define([
 
 		/**
 		 * Log messages
-		 * 
+		 *
 		 * @param sI18nText - Message text
 		 * @param sI18nTextLong -Message long text
 		 * @param aI18NParameters -Message Parameters. Embedded within message text
@@ -278,4 +275,4 @@ sap.ui.define([
 		},
 	});
 
-});
+});

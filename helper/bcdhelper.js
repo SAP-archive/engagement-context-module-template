@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2009-2016 SAP SE or an SAP affiliate company. All rights reserved.
- */
 jQuery.sap
 		.declare("com.sap.engagementcontext.moduletemplate.helper.bcdhelper");
 jQuery.sap.require("com.sap.cecenter.engagementcenter.bcd.SaveState");
@@ -10,8 +7,8 @@ com.sap.engagementcontext.moduletemplate.helper.bcdhelper = function(oArgData) {
 
 	// ! IMPORTANT ! Replace "<< CUSTOM BUSINESS DOCUMENT TYPE KEY >>"
 	// with your business document type key defined in the Business context
-	// configuration	
-	
+	// configuration
+
 	com.sap.cecenter.engagementcenter.bcd.BcdItem.call(this, oArgData,
 			"<< CUSTOM BUSINESS DOCUMENT TYPE KEY >>");
 
@@ -20,10 +17,10 @@ com.sap.engagementcontext.moduletemplate.helper.bcdhelper = function(oArgData) {
 	 * Add a business document to the internal data storage. You can retrieve
 	 * this JSON string by method
 	 * com.sap.cecenter.engagementcenter.bcd.BusinessDocument.getBusinessDocumentJson().
-	 * 
+	 *
 	 * This method is usually called by BCD handler method
 	 * openBusinessDocument(), the event OPEN_BUSINESS_DOCUMENT will be raised.
-	 * 
+	 *
 	 * Override this method as required
 	 */
 	// this.addBusinessDocument = function(oBusinessDocumentJson) {
@@ -44,7 +41,7 @@ com.sap.engagementcontext.moduletemplate.helper.bcdhelper = function(oArgData) {
 	/**
 	 * Remove a business document from the internal data storage in case it is
 	 * no longer needed and shall not be part of the current interaction.
-	 * 
+	 *
 	 * Override this method as required
 	 */
 	// this.closeBusinessDocument = function(oBusinessDocumentJson) {
@@ -54,7 +51,7 @@ com.sap.engagementcontext.moduletemplate.helper.bcdhelper = function(oArgData) {
 
 	/**
 	 * Remove a business document from the internal storage based on its ID.
-	 * 
+	 *
 	 * Override this method as required
 	 */
 	// this.removeBusinessDocumentById = function(sBusinessDocumentId) {
@@ -70,24 +67,24 @@ com.sap.engagementcontext.moduletemplate.helper.bcdhelper = function(oArgData) {
 
 	/**
 	 * Clear all business documents from the data container
-	 * 
-	 * Override this method as required	 
+	 *
+	 * Override this method as required
 	 */
 	// this.clearAllBusinessDocuments = function() {
 	// 	this.oData.businessDocuments = [];
 	// };
-	
+
 	/**
 	 * Prepare related objects link for Interaction Log
-	 * 
+	 *
 	 * objectType : Business Object Type
 	 * objectId :  Identifier of the object (for e.g., GUID, etc.)
 	 * objectName : Number of the object (for e.g.,  object number)
 	 * notRemovable: object shall not be removed from interaction log
-	 * 
+	 *
 	 * Override this method as required
 	 */
-	 
+
 	// this.constructRelatedObject : function(oArgBusinessDocumentJSON,
 	// 		bArgNotRemovable) {
 	// 	return {
