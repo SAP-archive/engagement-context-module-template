@@ -1,3 +1,9 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Important Notice
+This public repository is read-only and no longer maintained.
+
+
 # Module Template for SAP Hybris Service Engagement Context
 
 This module template project can be used as the basis for developing the necessary UI Views and objects for your custom documents/objects in the engagement context (of SAP Hybris Service Engagement Center) application.  
